@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userOverrides>
+    <override>
+        <path>E:\WORK\Zigbee\Zigbee_node\Src\main.c</path>
+        <encoding>System</encoding>
+    </override>
+    <override>
+        <path>E:\WORK\Zigbee\Zigbee_node\modules\flash\flash.c</path>
+        <encoding>System</encoding>
+    </override>
+    <override>
+        <path>E:\WORK\Zigbee\Zigbee_node\modules\packet\packet.c</path>
+        <encoding>System</encoding>
+    </override>
+    <override>
+        <path>E:\WORK\Zigbee\Zigbee_node\service\DA_service\service_DA.h</path>
+        <encoding>System</encoding>
+    </override>
+    <override>
+        <path>E:\WORK\Zigbee\Zigbee_node\service\Mesh_service\service_Mesh.h</path>
+        <encoding>System</encoding>
+    </override>
+    <override>
+        <path>E:\WORK\Zigbee\Zigbee_node\service\Shell_service\Shell\shell_call.c</path>
+        <encoding>System</encoding>
+    </override>
+</userOverrides>

@@ -1,0 +1,990 @@
+###############################################################################
+#
+# IAR ELF Linker V8.32.1.169/W32 for ARM                  24/Dec/2019  15:27:08
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Exe\Zigbee_node.out
+#    Map file     =  
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\List\Zigbee_node.map
+#    Command line =  
+#        -f C:\Users\ADMINI~1\AppData\Local\Temp\EWE563.tmp
+#        (E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\adc.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\CRC8_CCITT.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\dma.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\event.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\flash.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\gpio.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\log.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\main.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\packet.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\printf-stdarg.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\queue.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\RN8209.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\rtc.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\service_DA.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\service_Data.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\service_Mesh.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\service_Shell.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\shell.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\shell_call.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\startup_stm32l051xx.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_adc.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_adc_ex.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_cortex.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_dma.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_flash.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_flash_ex.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_flash_ramfunc.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_gpio.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_i2c.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_i2c_ex.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_msp.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_pwr.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_pwr_ex.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_rcc.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_rcc_ex.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_rtc.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_rtc_ex.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_tim.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_tim_ex.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_uart.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_hal_uart_ex.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\stm32l0xx_it.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\system_stm32l0xx.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\tim.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\timer.o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj\usart.o --redirect
+#        _Printf=_PrintfFull --redirect _Scanf=_ScanfFull --no_out_extension -o
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Exe\Zigbee_node.out --map
+#        E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\List\Zigbee_node.map
+#        --config E:\WORK\Zigbee\Zigbee_node\EWARM/stm32l051xx_flash.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x800'ffff] { ro };
+define block CSTACK with size = 2K, alignment = 8 { };
+define block HEAP with size = 512, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'1fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                        0xc0
+  .intvec            ro code   0x800'0000    0xc0  startup_stm32l051xx.o [1]
+                             - 0x800'00c0    0xc0
+
+"P1":                                      0x790c
+  .text              ro code   0x800'00c0   0xc08  stm32l0xx_hal_uart.o [1]
+  .text              ro code   0x800'0cc8   0x240  usart.o [1]
+  .text              ro code   0x800'0f08     0xc  stm32l0xx_hal.o [1]
+  .text              ro code   0x800'0f14   0x2f2  stm32l0xx_hal_dma.o [1]
+  .text              ro code   0x800'1206     0x2  stm32l0xx_hal_uart.o [1]
+  .text              ro code   0x800'1208     0x2  stm32l0xx_hal_uart_ex.o [1]
+  .text              ro code   0x800'120a    0x7e  lz77_init_single.o [3]
+  .text              ro code   0x800'1288   0x7ec  stm32l0xx_hal_rcc.o [1]
+  .text              ro code   0x800'1a74    0x32  I64Mul.o [3]
+  .text              ro code   0x800'1aa6    0x6a  I64DivMod.o [3]
+  .text              ro code   0x800'1b10    0xe0  I32DivModFast.o [3]
+  .text              ro code   0x800'1bf0     0x2  stm32l0xx_hal_uart.o [1]
+  .text              ro code   0x800'1bf2     0x2  stm32l0xx_hal_uart.o [1]
+  .text              ro code   0x800'1bf4     0x2  stm32l0xx_hal_uart.o [1]
+  .text              ro code   0x800'1bf6     0x2  stm32l0xx_hal_uart.o [1]
+  .text              ro code   0x800'1bf8   0x13e  main.o [1]
+  .text              ro code   0x800'1d36     0x2  startup_stm32l051xx.o [1]
+  .text              ro code   0x800'1d38    0x52  ABImemset.o [3]
+  .text              ro code   0x800'1d8a     0x2  startup_stm32l051xx.o [1]
+  .text              ro code   0x800'1d8c   0x268  stm32l0xx_hal_gpio.o [1]
+  .text              ro code   0x800'1ff4   0x138  stm32l0xx_hal_cortex.o [1]
+  .text              ro code   0x800'212c    0x38  stm32l0xx_hal.o [1]
+  .text              ro code   0x800'2164     0x2  I64DivZer.o [3]
+  .text              ro code   0x800'2166     0x2  startup_stm32l051xx.o [1]
+  .text              ro code   0x800'2168     0x2  IntDivZer.o [3]
+  .text              ro code   0x800'216a     0x2  startup_stm32l051xx.o [1]
+  .text              ro code   0x800'216c    0x2c  stm32l0xx_hal.o [1]
+  .text              ro code   0x800'2198    0xa0  gpio.o [1]
+  .text              ro code   0x800'2238    0x3c  dma.o [1]
+  .text              ro code   0x800'2274   0x15c  tim.o [1]
+  .text              ro code   0x800'23d0    0xb0  rtc.o [1]
+  .text              ro code   0x800'2480   0x130  adc.o [1]
+  .text              ro code   0x800'25b0   0x25c  service_Shell.o [1]
+  .text              ro code   0x800'280c   0x94c  service_Mesh.o [1]
+  .text              ro code   0x800'3158   0x794  service_Data.o [1]
+  .text              ro code   0x800'38ec   0x53c  service_DA.o [1]
+  .text              ro code   0x800'3e28   0x1cc  stm32l0xx_hal_rcc_ex.o [1]
+  .text              ro code   0x800'3ff4    0x5c  flash.o [1]
+  .text              ro code   0x800'4050   0x7b0  packet.o [1]
+  .text              ro code   0x800'4800    0x20  stm32l0xx_hal_msp.o [1]
+  .text              ro code   0x800'4820   0x310  stm32l0xx_hal_tim.o [1]
+  .text              ro code   0x800'4b30    0x4a  stm32l0xx_hal_tim_ex.o [1]
+  .text              ro code   0x800'4b7a     0x2  startup_stm32l051xx.o [1]
+  .text              ro code   0x800'4b7c   0x486  stm32l0xx_hal_rtc.o [1]
+  .text              ro code   0x800'5002     0x2  startup_stm32l051xx.o [1]
+  .text              ro code   0x800'5004   0x68c  stm32l0xx_hal_adc.o [1]
+  .text              ro code   0x800'5690    0x92  event.o [1]
+  .text              ro code   0x800'5722     0x2  startup_stm32l051xx.o [1]
+  .text              ro code   0x800'5724   0x58c  shell_call.o [1]
+  .text              ro code   0x800'5cb0   0x18c  shell.o [1]
+  .text              ro code   0x800'5e3c    0x4e  ABImemcpy.o [3]
+  .text              ro code   0x800'5e8a    0x22  stm32l0xx_hal.o [1]
+  .text              ro code   0x800'5eac    0x26  log.o [1]
+  .text              ro code   0x800'5ed2     0x2  startup_stm32l051xx.o [1]
+  .text              ro code   0x800'5ed4    0x1e  memcmp.o [3]
+  .text              ro code   0x800'5ef2     0x2  startup_stm32l051xx.o [1]
+  .text              ro code   0x800'5ef4   0x154  timer.o [1]
+  .text              ro code   0x800'6048    0x14  uwrite4.o [3]
+  .text              ro code   0x800'605c    0x16  uread4.o [3]
+  .text              ro code   0x800'6072     0x2  startup_stm32l051xx.o [1]
+  .text              ro code   0x800'6074    0xd0  stm32l0xx_hal_flash_ex.o [1]
+  .text              ro code   0x800'6144    0x36  CRC8_CCITT.o [1]
+  .text              ro code   0x800'617a     0x2  stm32l0xx_hal_adc.o [1]
+  .text              ro code   0x800'617c     0x2  stm32l0xx_hal_adc.o [1]
+  .text              ro code   0x800'617e     0x2  stm32l0xx_hal_adc.o [1]
+  .text              ro code   0x800'6180   0x110  queue.o [1]
+  .text              ro code   0x800'6290   0x300  printf-stdarg.o [1]
+  .text              ro code   0x800'6590    0x98  strcmp.o [3]
+  .text              ro code   0x800'6628   0x15c  iar_Stoulx.o [2]
+  .text              ro code   0x800'6784     0xe  strlen.o [3]
+  .text              ro code   0x800'6792    0x24  strspn.o [2]
+  .text              ro code   0x800'67b6    0x24  strcspn.o [2]
+  .text              ro code   0x800'67da     0x2  startup_stm32l051xx.o [1]
+  .text              ro code   0x800'67dc    0xf8  mktime.o [2]
+  .text              ro code   0x800'68d4   0x140  stm32l0xx_hal_flash.o [1]
+  .text              ro code   0x800'6a14    0x12  isspace.o [2]
+  .text              ro code   0x800'6a26    0x12  tolower.o [2]
+  .text              ro code   0x800'6a38    0x16  memchr.o [3]
+  .text              ro code   0x800'6a4e     0x2  startup_stm32l051xx.o [1]
+  .text              ro code   0x800'6a50    0x6c  xDaysTo.o [2]
+  .text              ro code   0x800'6abc   0x118  xttotm.o [2]
+  .text              ro code   0x800'6bd4     0x4  xTzoff_nop.o [2]
+  .text              ro code   0x800'6bd8    0x34  xlocale_c.o [2]
+  .text              ro code   0x800'6c0c     0x6  xisdst_nop.o [2]
+  .text              ro code   0x800'6c12     0x2  startup_stm32l051xx.o [1]
+  .rodata            const     0x800'6c14   0x100  CRC8_CCITT.o [1]
+  .text              ro code   0x800'6d14    0x70  system_stm32l0xx.o [1]
+  .rodata            const     0x800'6d84    0x50  iar_Stoulx.o [2]
+  .rodata            const     0x800'6dd4    0x48  packet.o [1]
+  .text              ro code   0x800'6e1c    0x48  stm32l0xx_it.o [1]
+  .text              ro code   0x800'6e64    0x10  stm32l0xx_hal.o [1]
+  .rodata            const     0x800'6e74    0x3c  service_Mesh.o [1]
+  .text              ro code   0x800'6eb0    0x3c  zero_init3.o [3]
+  .rodata            const     0x800'6eec    0x38  service_Mesh.o [1]
+  .rodata            const     0x800'6f24    0x34  service_Data.o [1]
+  .rodata            const     0x800'6f58    0x34  service_Mesh.o [1]
+  .rodata            const     0x800'6f8c    0x34  service_Mesh.o [1]
+  .rodata            const     0x800'6fc0    0x34  shell_call.o [1]
+  .rodata            const     0x800'6ff4    0x30  service_Data.o [1]
+  .rodata            const     0x800'7024    0x30  service_Data.o [1]
+  .rodata            const     0x800'7054    0x30  service_Mesh.o [1]
+  .rodata            const     0x800'7084    0x30  service_Mesh.o [1]
+  .rodata            const     0x800'70b4    0x30  service_Mesh.o [1]
+  .rodata            const     0x800'70e4    0x30  service_Mesh.o [1]
+  .rodata            const     0x800'7114    0x30  service_Mesh.o [1]
+  .rodata            const     0x800'7144    0x2c  service_Mesh.o [1]
+  .rodata            const     0x800'7170    0x2c  service_Mesh.o [1]
+  .rodata            const     0x800'719c    0x2c  service_Mesh.o [1]
+  .rodata            const     0x800'71c8    0x2c  service_Mesh.o [1]
+  .rodata            const     0x800'71f4    0x2c  service_Mesh.o [1]
+  .rodata            const     0x800'7220    0x2c  service_Mesh.o [1]
+  .rodata            const     0x800'724c    0x2c  service_Mesh.o [1]
+  .rodata            const     0x800'7278    0x2c  service_Mesh.o [1]
+  .rodata            const     0x800'72a4    0x2c  shell_call.o [1]
+  .rodata            const     0x800'72d0    0x28  service_DA.o [1]
+  .rodata            const     0x800'72f8    0x28  service_DA.o [1]
+  .rodata            const     0x800'7320    0x28  service_Data.o [1]
+  .rodata            const     0x800'7348    0x28  service_Mesh.o [1]
+  .rodata            const     0x800'7370    0x28  service_Mesh.o [1]
+  .rodata            const     0x800'7398    0x28  service_Mesh.o [1]
+  .rodata            const     0x800'73c0    0x28  service_Mesh.o [1]
+  .rodata            const     0x800'73e8    0x28  service_Mesh.o [1]
+  .rodata            const     0x800'7410    0x28  service_Shell.o [1]
+  .rodata            const     0x800'7438    0x28  shell.o [1]
+  .rodata            const     0x800'7460    0x28  shell_call.o [1]
+  .text              ro code   0x800'7488    0x28  data_init.o [3]
+  .rodata            const     0x800'74b0    0x24  service_DA.o [1]
+  .rodata            const     0x800'74d4    0x24  service_DA.o [1]
+  .rodata            const     0x800'74f8    0x24  service_Mesh.o [1]
+  .iar.init_table    const     0x800'751c    0x20  - Linker created -
+  .rodata            const     0x800'753c    0x20  service_Data.o [1]
+  .rodata            const     0x800'755c    0x20  service_Mesh.o [1]
+  .text              ro code   0x800'757c    0x1e  cmain.o [3]
+  .text              ro code   0x800'759a     0x4  low_level_init.o [2]
+  .text              ro code   0x800'759e     0x8  exit.o [2]
+  .text              ro code   0x800'75a6     0x2  startup_stm32l051xx.o [1]
+  .text              ro code   0x800'75a8     0xa  cexit.o [3]
+  .text              ro code   0x800'75b2     0x2  startup_stm32l051xx.o [1]
+  .text              ro code   0x800'75b4    0x14  exit.o [4]
+  .rodata            const     0x800'75c8    0x1c  service_Data.o [1]
+  .rodata            const     0x800'75e4    0x1c  shell.o [1]
+  .rodata            const     0x800'7600    0x1c  shell.o [1]
+  .rodata            const     0x800'761c    0x1c  shell_call.o [1]
+  .rodata            const     0x800'7638    0x18  service_Data.o [1]
+  .rodata            const     0x800'7650    0x18  service_Mesh.o [1]
+  .rodata            const     0x800'7668    0x18  service_Mesh.o [1]
+  .rodata            const     0x800'7680    0x18  shell_call.o [1]
+  .rodata            const     0x800'7698    0x18  shell_call.o [1]
+  .rodata            const     0x800'76b0    0x18  shell_call.o [1]
+  .rodata            const     0x800'76c8    0x18  shell_call.o [1]
+  .rodata            const     0x800'76e0    0x18  shell_call.o [1]
+  .rodata            const     0x800'76f8    0x14  service_Data.o [1]
+  .rodata            const     0x800'770c    0x14  service_Mesh.o [1]
+  .rodata            const     0x800'7720    0x14  shell_call.o [1]
+  .rodata            const     0x800'7734    0x14  shell_call.o [1]
+  .rodata            const     0x800'7748    0x14  shell_call.o [1]
+  .rodata            const     0x800'775c    0x14  shell_call.o [1]
+  .rodata            const     0x800'7770    0x14  shell_call.o [1]
+  .rodata            const     0x800'7784    0x14  shell_call.o [1]
+  .rodata            const     0x800'7798    0x14  shell_call.o [1]
+  .rodata            const     0x800'77ac    0x14  shell_call.o [1]
+  .rodata            const     0x800'77c0    0x10  service_DA.o [1]
+  .rodata            const     0x800'77d0    0x10  service_DA.o [1]
+  .rodata            const     0x800'77e0    0x10  service_Mesh.o [1]
+  .rodata            const     0x800'77f0    0x10  service_Mesh.o [1]
+  .rodata            const     0x800'7800    0x10  shell_call.o [1]
+  .rodata            const     0x800'7810    0x10  shell_call.o [1]
+  .rodata            const     0x800'7820    0x10  shell_call.o [1]
+  .rodata            const     0x800'7830    0x10  shell_call.o [1]
+  .rodata            const     0x800'7840    0x10  shell_call.o [1]
+  .rodata            const     0x800'7850    0x10  system_stm32l0xx.o [1]
+  .text              ro code   0x800'7860    0x10  startup_stm32l051xx.o [1]
+  .rodata            const     0x800'7870     0xc  service_Mesh.o [1]
+  .rodata            const     0x800'787c     0xc  service_Mesh.o [1]
+  .rodata            const     0x800'7888     0xc  shell_call.o [1]
+  .rodata            const     0x800'7894     0xc  shell_call.o [1]
+  .rodata            const     0x800'78a0     0xc  shell_call.o [1]
+  .rodata            const     0x800'78ac     0xc  system_stm32l0xx.o [1]
+  .text              ro code   0x800'78b8     0xc  cstartup_M.o [3]
+  .rodata            const     0x800'78c4     0x8  adc.o [1]
+  .rodata            const     0x800'78cc     0x8  printf-stdarg.o [1]
+  .rodata            const     0x800'78d4     0x8  shell.o [1]
+  .rodata            const     0x800'78dc     0x8  shell.o [1]
+  .rodata            const     0x800'78e4     0x8  shell_call.o [1]
+  .rodata            const     0x800'78ec     0x8  shell_call.o [1]
+  .rodata            const     0x800'78f4     0x8  shell_call.o [1]
+  .rodata            const     0x800'78fc     0x8  shell_call.o [1]
+  .rodata            const     0x800'7904     0x8  shell_call.o [1]
+  .rodata            const     0x800'790c     0x8  shell_call.o [1]
+  .rodata            const     0x800'7914     0x8  shell_call.o [1]
+  .rodata            const     0x800'791c     0x8  shell_call.o [1]
+  .rodata            const     0x800'7924     0x8  shell_call.o [1]
+  .rodata            const     0x800'792c     0x8  system_stm32l0xx.o [1]
+  .rodata            const     0x800'7934     0x8  tim.o [1]
+  .rodata            const     0x800'793c     0x8  tim.o [1]
+  .rodata            const     0x800'7944     0x4  rtc.o [1]
+  .rodata            const     0x800'7948     0x4  shell.o [1]
+  .rodata            const     0x800'794c     0x4  shell.o [1]
+  .rodata            const     0x800'7950     0x2  xlocale_c.o [2]
+  .text              ro code   0x800'7952     0x2  startup_stm32l051xx.o [1]
+  .text              ro code   0x800'7954     0x2  startup_stm32l051xx.o [1]
+  .text              ro code   0x800'7956     0x2  startup_stm32l051xx.o [1]
+  .rodata            const     0x800'7958     0x0  zero_init3.o [3]
+  .rodata            const     0x800'7958     0x0  lz77_init_single.o [3]
+  Initializer bytes  const     0x800'7958    0x74  <for P2-1>
+                             - 0x800'79cc  0x790c
+
+"P2", part 1 of 3:                          0x145
+  P2-1                        0x2000'0000   0x145  <Init block>
+    .data            inited   0x2000'0000     0x4  packet.o [1]
+    .data            inited   0x2000'0004     0x4  packet.o [1]
+    .data            inited   0x2000'0008     0x8  packet.o [1]
+    .data            inited   0x2000'0010     0x8  service_DA.o [1]
+    .data            inited   0x2000'0018    0x14  service_Data.o [1]
+    .data            inited   0x2000'002c    0x14  service_Data.o [1]
+    .data            inited   0x2000'0040    0x14  service_Data.o [1]
+    .data            inited   0x2000'0054    0x14  service_Data.o [1]
+    .data            inited   0x2000'0068    0x50  service_Mesh.o [1]
+    .data            inited   0x2000'00b8     0x4  service_Mesh.o [1]
+    .data            inited   0x2000'00bc     0x8  service_Mesh.o [1]
+    .data            inited   0x2000'00c4     0x8  service_Mesh.o [1]
+    .data            inited   0x2000'00cc     0xc  shell_call.o [1]
+    .data            inited   0x2000'00d8    0x10  shell_call.o [1]
+    .data            inited   0x2000'00e8    0x10  shell_call.o [1]
+    .data            inited   0x2000'00f8     0x4  system_stm32l0xx.o [1]
+    .data            inited   0x2000'00fc    0x48  xlocale_c.o [2]
+    .data            inited   0x2000'0144     0x1  log.o [1]
+                            - 0x2000'0145   0x145
+
+"P2", part 2 of 3:                          0x898
+  .bss               zero     0x2000'0148   0x12c  service_Data.o [1]
+  .bss               zero     0x2000'0274    0x84  service_Shell.o [1]
+  .bss               zero     0x2000'02f8    0x80  usart.o [1]
+  .bss               zero     0x2000'0378    0x80  usart.o [1]
+  .bss               zero     0x2000'03f8    0x80  usart.o [1]
+  .bss               zero     0x2000'0478    0x5c  adc.o [1]
+  .bss               zero     0x2000'04d4    0x4c  main.o [1]
+  .bss               zero     0x2000'0520    0x48  adc.o [1]
+  .bss               zero     0x2000'0568    0x48  usart.o [1]
+  .bss               zero     0x2000'05b0    0x48  usart.o [1]
+  .bss               zero     0x2000'05f8    0x44  service_Mesh.o [1]
+  .bss               zero     0x2000'063c    0x3c  tim.o [1]
+  .bss               zero     0x2000'0678    0x3c  tim.o [1]
+  .bss               zero     0x2000'06b4    0x30  service_DA.o [1]
+  .bss               zero     0x2000'06e4    0x30  service_DA.o [1]
+  .bss               zero     0x2000'0714    0x30  service_Data.o [1]
+  .bss               zero     0x2000'0744    0x30  service_Data.o [1]
+  .bss               zero     0x2000'0774    0x30  service_Mesh.o [1]
+  .bss               zero     0x2000'07a4    0x30  service_Mesh.o [1]
+  .bss               zero     0x2000'07d4    0x30  service_Shell.o [1]
+  .bss               zero     0x2000'0804    0x2c  xttotm.o [2]
+  .bss               zero     0x2000'0830    0x24  rtc.o [1]
+  .bss               zero     0x2000'0854    0x20  timer.o [1]
+  .bss               zero     0x2000'0874    0x18  stm32l0xx_hal_flash.o [1]
+  .bss               zero     0x2000'088c    0x14  service_DA.o [1]
+  .bss               zero     0x2000'08a0    0x14  service_DA.o [1]
+  .bss               zero     0x2000'08b4    0x14  service_DA.o [1]
+  .bss               zero     0x2000'08c8    0x14  service_Data.o [1]
+  .bss               zero     0x2000'08dc    0x14  service_Data.o [1]
+  .bss               zero     0x2000'08f0    0x14  service_Mesh.o [1]
+  .bss               zero     0x2000'0904    0x14  service_Mesh.o [1]
+  .bss               zero     0x2000'0918    0x14  service_Mesh.o [1]
+  .bss               zero     0x2000'092c    0x14  service_Mesh.o [1]
+  .bss               zero     0x2000'0940    0x14  service_Shell.o [1]
+  .bss               zero     0x2000'0954    0x10  service_Data.o [1]
+  .bss               zero     0x2000'0964     0xc  service_DA.o [1]
+  .bss               zero     0x2000'0970     0x8  packet.o [1]
+  .bss               zero     0x2000'0978     0x8  service_DA.o [1]
+  .bss               zero     0x2000'0980     0x8  service_DA.o [1]
+  .bss               zero     0x2000'0988     0x8  service_DA.o [1]
+  .bss               zero     0x2000'0990     0x8  service_Data.o [1]
+  .bss               zero     0x2000'0998     0x8  service_Data.o [1]
+  .bss               zero     0x2000'09a0     0x8  service_Mesh.o [1]
+  .bss               zero     0x2000'09a8     0x8  service_Mesh.o [1]
+  .bss               zero     0x2000'09b0     0x8  service_Mesh.o [1]
+  .bss               zero     0x2000'09b8     0x8  service_Shell.o [1]
+  .bss               zero     0x2000'09c0     0x4  packet.o [1]
+  .bss               zero     0x2000'09c4     0x4  packet.o [1]
+  .bss               zero     0x2000'09c8     0x4  service_Data.o [1]
+  .bss               zero     0x2000'09cc     0x4  service_Mesh.o [1]
+  .bss               zero     0x2000'09d0     0x4  stm32l0xx_hal.o [1]
+  .bss               zero     0x2000'09d4     0x2  service_DA.o [1]
+  .bss               zero     0x2000'09d6     0x1  packet.o [1]
+  .bss               zero     0x2000'09d7     0x1  packet.o [1]
+  .bss               zero     0x2000'09d8     0x1  packet.o [1]
+  .bss               zero     0x2000'09d9     0x1  service_DA.o [1]
+  .bss               zero     0x2000'09da     0x1  service_DA.o [1]
+  .bss               zero     0x2000'09db     0x1  service_Mesh.o [1]
+  .bss               zero     0x2000'09dc     0x1  service_Mesh.o [1]
+                            - 0x2000'09dd   0x895
+
+"P2", part 3 of 3:                          0x800
+  CSTACK                      0x2000'09e0   0x800  <Block>
+    CSTACK           uninit   0x2000'09e0   0x800  <Block tail>
+                            - 0x2000'11e0   0x800
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+   0x800'79cc   0x800'ffff  0x8634
+  0x2000'0145  0x2000'0147     0x3
+  0x2000'11e0  0x2000'1fff   0xe20
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x895:
+          0x2000'0148  0x895
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x74 (35% of destination):
+           0x800'7958   0x74
+    1 destination range, total size 0x145:
+          0x2000'0000  0x145
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                    ro code  ro data  rw data
+    ------                    -------  -------  -------
+command line/config:
+    ---------------------------------------------------
+    Total:
+
+E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj: [1]
+    CRC8_CCITT.o                   54      256
+    adc.o                         304        8      164
+    dma.o                          60
+    event.o                       146
+    flash.o                        92
+    gpio.o                        160
+    log.o                          38                 1
+    main.o                        318                76
+    packet.o                    1 968       77       35
+    printf-stdarg.o               768        8
+    queue.o                       272
+    rtc.o                         176        4       36
+    service_DA.o                1 340      187      204
+    service_Data.o              1 940      321      552
+    service_Mesh.o              2 380    1 239      374
+    service_Shell.o               604       40      208
+    shell.o                       396      120
+    shell_call.o                1 420      648       44
+    startup_stm32l051xx.o         244
+    stm32l0xx_hal.o               162                 4
+    stm32l0xx_hal_adc.o         1 682
+    stm32l0xx_hal_cortex.o        312
+    stm32l0xx_hal_dma.o           754
+    stm32l0xx_hal_flash.o         320                24
+    stm32l0xx_hal_flash_ex.o      208
+    stm32l0xx_hal_gpio.o          616
+    stm32l0xx_hal_msp.o            32
+    stm32l0xx_hal_rcc.o         2 028
+    stm32l0xx_hal_rcc_ex.o        460
+    stm32l0xx_hal_rtc.o         1 158
+    stm32l0xx_hal_tim.o           784
+    stm32l0xx_hal_tim_ex.o         74
+    stm32l0xx_hal_uart.o        3 090
+    stm32l0xx_hal_uart_ex.o         2
+    stm32l0xx_it.o                 72
+    system_stm32l0xx.o            112       37        4
+    tim.o                         348       16      120
+    timer.o                       340                32
+    usart.o                       576               528
+    ---------------------------------------------------
+    Total:                     25 810    2 961    2 406
+
+dl6M_tlf.a: [2]
+    exit.o                          8
+    iar_Stoulx.o                  348       80
+    isspace.o                      18
+    low_level_init.o                4
+    mktime.o                      248
+    strcspn.o                      36
+    strspn.o                       36
+    tolower.o                      18
+    xDaysTo.o                     108
+    xTzoff_nop.o                    4
+    xisdst_nop.o                    6
+    xlocale_c.o                    52       28       72
+    xttotm.o                      280                44
+    ---------------------------------------------------
+    Total:                      1 166      108      116
+
+rt6M_tl.a: [3]
+    ABImemcpy.o                    78
+    ABImemset.o                    82
+    I32DivModFast.o               224
+    I64DivMod.o                   106
+    I64DivZer.o                     2
+    I64Mul.o                       50
+    IntDivZer.o                     2
+    cexit.o                        10
+    cmain.o                        30
+    cstartup_M.o                   12
+    data_init.o                    40
+    lz77_init_single.o            126
+    memchr.o                       22
+    memcmp.o                       30
+    strcmp.o                      152
+    strlen.o                       14
+    uread4.o                       22
+    uwrite4.o                      20
+    zero_init3.o                   60
+    ---------------------------------------------------
+    Total:                      1 082
+
+shb_l.a: [4]
+    exit.o                         20
+    ---------------------------------------------------
+    Total:                         20
+
+    Linker created                          33    2 048
+-------------------------------------------------------
+    Grand Total:               28 078    3 102    4 570
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'751c          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'753c          --   Gb  - Linker created -
+?main                    0x800'757d         Code  Gb  cmain.o [3]
+ADC_ConversionStop       0x800'5549   0x62  Code  Lc  stm32l0xx_hal_adc.o [1]
+ADC_DMAConvCplt          0x800'55ab   0x7c  Code  Lc  stm32l0xx_hal_adc.o [1]
+ADC_DMAError             0x800'563f   0x1e  Code  Lc  stm32l0xx_hal_adc.o [1]
+ADC_DMAHalfConvCplt      0x800'5631    0xe  Code  Lc  stm32l0xx_hal_adc.o [1]
+ADC_DelayMicroSecond     0x800'565d   0x22  Code  Lc  stm32l0xx_hal_adc.o [1]
+ADC_Disable              0x800'54c1   0x88  Code  Lc  stm32l0xx_hal_adc.o [1]
+ADC_Enable               0x800'5431   0x86  Code  Lc  stm32l0xx_hal_adc.o [1]
+ADC_I_Init               0x800'396d   0x1c  Code  Gb  service_DA.o [1]
+ADC_U_Init               0x800'399b   0x1c  Code  Gb  service_DA.o [1]
+AHBPrescTable            0x800'7850   0x10  Data  Gb  system_stm32l0xx.o [1]
+APBPrescTable            0x800'792c    0x8  Data  Gb  system_stm32l0xx.o [1]
+CRC8_CCITT_Calc          0x800'6169   0x12  Code  Gb  CRC8_CCITT.o [1]
+CRC8_CCITT_Calc2         0x800'6145   0x20  Code  Gb  CRC8_CCITT.o [1]
+CSTACK$$Base            0x2000'09e0          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'11e0          --   Gb  - Linker created -
+DA_I_process             0x800'3b79   0x48  Code  Gb  service_DA.o [1]
+DA_U_process             0x800'3bc1   0x46  Code  Gb  service_DA.o [1]
+DA_timer_callback        0x800'3d75   0x14  Code  Lc  service_DA.o [1]
+DMA1_Channel1_IRQHandler
+                         0x800'3d99   0x50  Code  Gb  service_DA.o [1]
+DMA1_Channel2_3_IRQHandler
+                         0x800'6e3d   0x10  Code  Gb  stm32l0xx_it.o [1]
+DMA_SetConfig            0x800'11d7   0x30  Code  Lc  stm32l0xx_hal_dma.o [1]
+EEPROM_ReadBytes         0x800'402d   0x18  Code  Gb  flash.o [1]
+EEPROM_WriteBytes        0x800'3ff5   0x38  Code  Gb  flash.o [1]
+EXTI0_1_IRQHandler       0x800'6e33    0xa  Code  Gb  stm32l0xx_it.o [1]
+Error_Handler            0x800'1d35    0x2  Code  Gb  main.o [1]
+FLASH_SetErrorCode       0x800'6945   0xcc  Code  Lc  stm32l0xx_hal_flash.o [1]
+FLASH_WaitForLastOperation
+                         0x800'68d5   0x6e  Code  Gb  stm32l0xx_hal_flash.o [1]
+HAL_ADC_ConfigChannel    0x800'536b   0xb0  Code  Gb  stm32l0xx_hal_adc.o [1]
+HAL_ADC_Init             0x800'5005  0x20a  Code  Gb  stm32l0xx_hal_adc.o [1]
+HAL_ADC_MspInit          0x800'250d   0x80  Code  Gb  adc.o [1]
+HAL_ADC_Start_DMA        0x800'5229   0xae  Code  Gb  stm32l0xx_hal_adc.o [1]
+HAL_ADC_Stop_DMA         0x800'52d7   0x94  Code  Gb  stm32l0xx_hal_adc.o [1]
+HAL_DMA_Abort            0x800'103d   0x54  Code  Gb  stm32l0xx_hal_dma.o [1]
+HAL_DMA_Abort_IT         0x800'1091   0x5e  Code  Gb  stm32l0xx_hal_dma.o [1]
+HAL_DMA_GetError         0x800'11d3    0x4  Code  Gb  stm32l0xx_hal_dma.o [1]
+HAL_DMA_IRQHandler       0x800'10ef   0xe4  Code  Gb  stm32l0xx_hal_dma.o [1]
+HAL_DMA_Init             0x800'0f15   0x8c  Code  Gb  stm32l0xx_hal_dma.o [1]
+HAL_DMA_Start_IT         0x800'0fb1   0x8c  Code  Gb  stm32l0xx_hal_dma.o [1]
+HAL_Delay                0x800'5e8b   0x22  Code  Wk  stm32l0xx_hal.o [1]
+HAL_FLASHEx_DATAEEPROM_Lock
+                         0x800'60a5    0xe  Code  Gb  stm32l0xx_hal_flash_ex.o [1]
+HAL_FLASHEx_DATAEEPROM_Program
+                         0x800'60b3   0x7a  Code  Gb  stm32l0xx_hal_flash_ex.o [1]
+HAL_FLASHEx_DATAEEPROM_Unlock
+                         0x800'6075   0x2c  Code  Gb  stm32l0xx_hal_flash_ex.o [1]
+HAL_GPIO_EXTI_Callback   0x800'47f3    0xe  Code  Gb  packet.o [1]
+HAL_GPIO_EXTI_IRQHandler
+                         0x800'1fa3   0x22  Code  Gb  stm32l0xx_hal_gpio.o [1]
+HAL_GPIO_Init            0x800'1d8d  0x1fc  Code  Gb  stm32l0xx_hal_gpio.o [1]
+HAL_GPIO_WritePin        0x800'1f89   0x1a  Code  Gb  stm32l0xx_hal_gpio.o [1]
+HAL_GetTick              0x800'0f09    0xc  Code  Wk  stm32l0xx_hal.o [1]
+HAL_IncTick              0x800'6e65   0x10  Code  Wk  stm32l0xx_hal.o [1]
+HAL_Init                 0x800'216d   0x28  Code  Gb  stm32l0xx_hal.o [1]
+HAL_InitTick             0x800'212d   0x38  Code  Wk  stm32l0xx_hal.o [1]
+HAL_MspInit              0x800'4801   0x20  Code  Gb  stm32l0xx_hal_msp.o [1]
+HAL_NVIC_EnableIRQ       0x800'20e9    0xe  Code  Gb  stm32l0xx_hal_cortex.o [1]
+HAL_NVIC_SetPriority     0x800'20d5   0x14  Code  Gb  stm32l0xx_hal_cortex.o [1]
+HAL_NVIC_SystemReset     0x800'20f7    0x8  Code  Gb  stm32l0xx_hal_cortex.o [1]
+HAL_RCCEx_PeriphCLKConfig
+                         0x800'3e29  0x198  Code  Gb  stm32l0xx_hal_rcc_ex.o [1]
+HAL_RCC_ClockConfig      0x800'17a9  0x1aa  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_GetHCLKFreq      0x800'1a05    0x6  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK1Freq     0x800'1a0b   0x18  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK2Freq     0x800'1a29   0x18  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                         0x800'196d   0x98  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_OscConfig        0x800'1289  0x506  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RTC_GetDate          0x800'4efd   0x4e  Code  Gb  stm32l0xx_hal_rtc.o [1]
+HAL_RTC_GetTime          0x800'4d89   0x62  Code  Gb  stm32l0xx_hal_rtc.o [1]
+HAL_RTC_Init             0x800'4b7d   0xe0  Code  Gb  stm32l0xx_hal_rtc.o [1]
+HAL_RTC_MspInit          0x800'2457   0x18  Code  Gb  rtc.o [1]
+HAL_RTC_SetDate          0x800'4df1  0x10c  Code  Gb  stm32l0xx_hal_rtc.o [1]
+HAL_RTC_SetTime          0x800'4c5d  0x12c  Code  Gb  stm32l0xx_hal_rtc.o [1]
+HAL_RTC_WaitForSynchro   0x800'4f59   0x32  Code  Gb  stm32l0xx_hal_rtc.o [1]
+HAL_SYSTICK_Config       0x800'20ff    0xc  Code  Gb  stm32l0xx_hal_cortex.o [1]
+HAL_TIMEx_MasterConfigSynchronization
+                         0x800'4b31   0x4a  Code  Gb  stm32l0xx_hal_tim_ex.o [1]
+HAL_TIM_Base_Init        0x800'4821   0x38  Code  Gb  stm32l0xx_hal_tim.o [1]
+HAL_TIM_Base_MspInit     0x800'232f   0x16  Code  Gb  tim.o [1]
+HAL_TIM_MspPostInit      0x800'235b   0x48  Code  Gb  tim.o [1]
+HAL_TIM_PWM_ConfigChannel
+                         0x800'48bd  0x102  Code  Gb  stm32l0xx_hal_tim.o [1]
+HAL_TIM_PWM_Init         0x800'4859   0x38  Code  Gb  stm32l0xx_hal_tim.o [1]
+HAL_TIM_PWM_MspInit      0x800'2345   0x16  Code  Gb  tim.o [1]
+HAL_TIM_PWM_Start        0x800'4891   0x2c  Code  Gb  stm32l0xx_hal_tim.o [1]
+HAL_UARTEx_WakeupCallback
+                         0x800'1209    0x2  Code  Wk  stm32l0xx_hal_uart_ex.o [1]
+HAL_UART_DMAStop         0x800'03c9   0x8c  Code  Gb  stm32l0xx_hal_uart.o [1]
+HAL_UART_IRQHandler      0x800'045d  0x178  Code  Gb  stm32l0xx_hal_uart.o [1]
+HAL_UART_Init            0x800'00c1   0x7a  Code  Gb  stm32l0xx_hal_uart.o [1]
+HAL_UART_MspInit         0x800'0d5f  0x170  Code  Gb  usart.o [1]
+HAL_UART_Receive_DMA     0x800'02eb   0xce  Code  Gb  stm32l0xx_hal_uart.o [1]
+HAL_UART_Transmit        0x800'0141   0xee  Code  Gb  stm32l0xx_hal_uart.o [1]
+HAL_UART_Transmit_DMA    0x800'022f   0xbc  Code  Gb  stm32l0xx_hal_uart.o [1]
+HandelKeyInterrupt       0x800'47f1    0x2  Code  Gb  packet.o [1]
+HardFault_Handler        0x800'6e1f    0x4  Code  Gb  stm32l0xx_it.o [1]
+I_value_process          0x800'3adf   0x82  Code  Gb  service_DA.o [1]
+I_value_process::__func__
+                         0x800'77c0   0x10  Data  Lc  service_DA.o [1]
+LPUART1_IRQHandler       0x800'6e4d    0xa  Code  Gb  stm32l0xx_it.o [1]
+MX_ADC_Init              0x800'2481   0x8c  Code  Gb  adc.o [1]
+MX_DMA_Init              0x800'2239   0x3c  Code  Gb  dma.o [1]
+MX_GPIO_Init             0x800'2199   0xa0  Code  Gb  gpio.o [1]
+MX_LPUART1_UART_Init     0x800'0cc9   0x36  Code  Gb  usart.o [1]
+MX_RTC_Init              0x800'23d1   0x86  Code  Gb  rtc.o [1]
+MX_TIM22_Init            0x800'22b9   0x76  Code  Gb  tim.o [1]
+MX_TIM6_Init             0x800'2275   0x44  Code  Gb  tim.o [1]
+MX_USART1_UART_Init      0x800'0cff   0x30  Code  Gb  usart.o [1]
+MX_USART2_UART_Init      0x800'0d2f   0x30  Code  Gb  usart.o [1]
+NMI_Handler              0x800'6e1d    0x2  Code  Gb  stm32l0xx_it.o [1]
+NVIC_EnableIRQ           0x800'1ff5    0xe  Code  Lc  stm32l0xx_hal_cortex.o [1]
+NVIC_SetPriority         0x800'2003   0x8c  Code  Lc  stm32l0xx_hal_cortex.o [1]
+NVIC_SystemReset         0x800'208f   0x14  Code  Lc  stm32l0xx_hal_cortex.o [1]
+PLLMulTable              0x800'78ac    0xc  Data  Gb  system_stm32l0xx.o [1]
+PendSV_Handler           0x800'6e25    0x2  Code  Gb  stm32l0xx_it.o [1]
+RTC_Bcd2ToByte           0x800'4fef   0x14  Code  Gb  stm32l0xx_hal_rtc.o [1]
+RTC_ByteToBcd2           0x800'4fd1   0x1e  Code  Gb  stm32l0xx_hal_rtc.o [1]
+RTC_EnterInitMode        0x800'4f8d   0x3c  Code  Gb  stm32l0xx_hal_rtc.o [1]
+Region$$Table$$Base      0x800'751c          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'753c          --   Gb  - Linker created -
+SVC_Handler              0x800'6e23    0x2  Code  Gb  stm32l0xx_it.o [1]
+Shell_exec               0x800'5cb1   0x64  Code  Gb  shell.o [1]
+SysTick_Config           0x800'20a3   0x32  Code  Lc  stm32l0xx_hal_cortex.o [1]
+SysTick_Handler          0x800'6e27    0xc  Code  Gb  stm32l0xx_it.o [1]
+SystemClock_Config       0x800'1c41   0x8c  Code  Gb  main.o [1]
+SystemCoreClock         0x2000'00f8    0x4  Data  Gb  system_stm32l0xx.o [1]
+SystemInit               0x800'6d15   0x4c  Code  Gb  system_stm32l0xx.o [1]
+TIM_Base_SetConfig       0x800'49c5   0x52  Code  Lc  stm32l0xx_hal_tim.o [1]
+TIM_CCxChannelCmd        0x800'4b0d   0x24  Code  Lc  stm32l0xx_hal_tim.o [1]
+TIM_OC1_SetConfig        0x800'4a17   0x32  Code  Lc  stm32l0xx_hal_tim.o [1]
+TIM_OC2_SetConfig        0x800'4a49   0x36  Code  Lc  stm32l0xx_hal_tim.o [1]
+TIM_OC3_SetConfig        0x800'4a81   0x34  Code  Lc  stm32l0xx_hal_tim.o [1]
+TIM_OC4_SetConfig        0x800'4ab5   0x36  Code  Lc  stm32l0xx_hal_tim.o [1]
+Time_To_Unix             0x800'5ff9   0x46  Code  Gb  timer.o [1]
+UART_AdvFeatureConfig    0x800'0995   0xde  Code  Gb  stm32l0xx_hal_uart.o [1]
+UART_CheckIdleState      0x800'0a73   0x60  Code  Gb  stm32l0xx_hal_uart.o [1]
+UART_DMAAbortOnError     0x800'0c85   0x18  Code  Lc  stm32l0xx_hal_uart.o [1]
+UART_DMAError            0x800'0c3b   0x4a  Code  Lc  stm32l0xx_hal_uart.o [1]
+UART_DMAReceiveCplt      0x800'0bbd   0x46  Code  Lc  stm32l0xx_hal_uart.o [1]
+UART_DMARxHalfCplt       0x800'0c2d    0xe  Code  Lc  stm32l0xx_hal_uart.o [1]
+UART_DMATransmitCplt     0x800'0b79   0x36  Code  Lc  stm32l0xx_hal_uart.o [1]
+UART_DMATxHalfCplt       0x800'0baf    0xe  Code  Lc  stm32l0xx_hal_uart.o [1]
+UART_EndRxTransfer       0x800'0b57   0x22  Code  Lc  stm32l0xx_hal_uart.o [1]
+UART_EndTransmit_IT      0x800'0c9d   0x20  Code  Lc  stm32l0xx_hal_uart.o [1]
+UART_EndTxTransfer       0x800'0b45   0x12  Code  Lc  stm32l0xx_hal_uart.o [1]
+UART_SetConfig           0x800'05d9  0x3b0  Code  Gb  stm32l0xx_hal_uart.o [1]
+UART_WaitOnFlagUntilTimeout
+                         0x800'0add   0x64  Code  Gb  stm32l0xx_hal_uart.o [1]
+USART1_IRQHandler        0x800'3839   0x9a  Code  Gb  service_Data.o [1]
+USART2_IRQHandler        0x800'27b1   0x2e  Code  Gb  service_Shell.o [1]
+_LocaleC_isspace         0x800'6be5   0x14  Code  Gb  xlocale_c.o [2]
+_LocaleC_isupper         0x800'6bd9    0x2  Code  Gb  xlocale_c.o [2]
+_LocaleC_tolower         0x800'6bf9    0xc  Code  Gb  xlocale_c.o [2]
+_Ttotm_ts               0x2000'0804   0x2c  Data  Lc  xttotm.o [2]
+_Tzoff                   0x800'6bd5    0x4  Code  Gb  xTzoff_nop.o [2]
+__aeabi_idiv             0x800'1b3d         Code  Gb  I32DivModFast.o [3]
+__aeabi_idiv0            0x800'2169         Code  Gb  IntDivZer.o [3]
+__aeabi_idivmod          0x800'1b3d         Code  Gb  I32DivModFast.o [3]
+__aeabi_ldiv0            0x800'2165         Code  Gb  I64DivZer.o [3]
+__aeabi_lmul             0x800'1a75         Code  Gb  I64Mul.o [3]
+__aeabi_memclr4          0x800'1d59         Code  Gb  ABImemset.o [3]
+__aeabi_memclr8          0x800'1d59         Code  Gb  ABImemset.o [3]
+__aeabi_memcpy           0x800'5e71         Code  Gb  ABImemcpy.o [3]
+__aeabi_memcpy4          0x800'5e3d         Code  Gb  ABImemcpy.o [3]
+__aeabi_memcpy8          0x800'5e3d         Code  Gb  ABImemcpy.o [3]
+__aeabi_memset           0x800'1d39         Code  Gb  ABImemset.o [3]
+__aeabi_uidiv            0x800'1b43         Code  Gb  I32DivModFast.o [3]
+__aeabi_uidivmod         0x800'1b43         Code  Gb  I32DivModFast.o [3]
+__aeabi_uldivmod         0x800'1aa7         Code  Gb  I64DivMod.o [3]
+__aeabi_uread4           0x800'605d         Code  Gb  uread4.o [3]
+__aeabi_uwrite4          0x800'6049         Code  Gb  uwrite4.o [3]
+__cmain                  0x800'757d         Code  Gb  cmain.o [3]
+__exit                   0x800'75b5   0x14  Code  Gb  exit.o [4]
+__iar_Daysto32           0x800'6a51   0x3a  Code  Gb  xDaysTo.o [2]
+__iar_Isdst32            0x800'6c0d    0x6  Code  Gb  xisdst_nop.o [2]
+__iar_Memchr             0x800'6a39         Code  Gb  memchr.o [3]
+__iar_Memcpy             0x800'5e7d         Code  Gb  ABImemcpy.o [3]
+__iar_Memset4_word       0x800'1d5d         Code  Gb  ABImemset.o [3]
+__iar_Memset_word        0x800'1d45         Code  Gb  ABImemset.o [3]
+__iar_Stoulx             0x800'6629  0x14c  Code  Gb  iar_Stoulx.o [2]
+__iar_Ttotm32            0x800'6abd   0xda  Code  Gb  xttotm.o [2]
+__iar_data_init3         0x800'7489   0x28  Code  Gb  data_init.o [3]
+__iar_globLocale        0x2000'00fc   0x48  Data  Lc  xlocale_c.o [2]
+__iar_global_Locale      0x800'6c05    0x4  Code  Gb  xlocale_c.o [2]
+__iar_lz77_init_single3
+                         0x800'120b   0x7e  Code  Gb  lz77_init_single.o [3]
+__iar_program_start      0x800'78b9         Code  Gb  cstartup_M.o [3]
+__iar_zero_init3         0x800'6eb1   0x3c  Code  Gb  zero_init3.o [3]
+__low_level_init         0x800'759b    0x4  Code  Gb  low_level_init.o [2]
+__mktime32               0x800'67dd   0xf8  Code  Gb  mktime.o [2]
+__vector_table           0x800'0000         Data  Gb  startup_stm32l051xx.o [1]
+_call_main               0x800'7589         Code  Gb  cmain.o [3]
+_crc_table               0x800'6c14  0x100  Data  Lc  CRC8_CCITT.o [1]
+_exit                    0x800'75a9         Code  Gb  cexit.o [3]
+_main                    0x800'7597         Code  Gb  cmain.o [3]
+a_cmd_registration       0x800'7438   0x28  Data  Gb  shell.o [1]
+ack_buf                 0x2000'0148  0x12c  Data  Lc  service_Data.o [1]
+adc2ma                   0x800'39c9   0x4a  Code  Lc  service_DA.o [1]
+adc2v                    0x800'3a13   0x4c  Code  Lc  service_DA.o [1]
+adc_in_buf              0x2000'0988    0x8  Data  Lc  service_DA.o [1]
+adc_in_data             0x2000'09d4    0x2  Data  Lc  service_DA.o [1]
+adc_init                 0x800'3989   0x12  Code  Gb  service_DA.o [1]
+adc_init_u               0x800'39b7   0x12  Code  Gb  service_DA.o [1]
+adc_ma_buf_num          0x2000'09da    0x1  Data  Lc  service_DA.o [1]
+adc_ma_data_get          0x800'3a5f   0x80  Code  Gb  service_DA.o [1]
+adc_start                0x800'3951   0x12  Code  Gb  service_DA.o [1]
+adc_state               0x2000'09d9    0x1  Data  Lc  service_DA.o [1]
+adc_stop                 0x800'3963    0xa  Code  Gb  service_DA.o [1]
+add_time                0x2000'09c4    0x4  Data  Gb  packet.o [1]
+atoi                     0x800'6775    0x4  Code  Gb  iar_Stoulx.o [2]
+cbFunTab                 0x800'6dd4   0x48  Data  Lc  packet.o [1]
+change_bright            0x800'4083   0x5e  Code  Gb  packet.o [1]
+clear_intac              0x800'4073    0x8  Code  Gb  packet.o [1]
+clear_rejoin             0x800'405d    0x8  Code  Gb  packet.o [1]
+cmd_send                 0x800'28c7  0x112  Code  Lc  service_Mesh.o [1]
+cmd_send::__func__       0x800'7870    0xc  Data  Lc  service_Mesh.o [1]
+cur_time                0x2000'09c0    0x4  Data  Lc  packet.o [1]
+data_collection          0x800'3d33   0x1e  Code  Lc  service_DA.o [1]
+data_handler             0x800'46fd   0x80  Code  Gb  packet.o [1]
+dev_state               0x2000'09dc    0x1  Data  Lc  service_Mesh.o [1]
+digits                   0x800'6dac   0x28  Data  Lc  iar_Stoulx.o [2]
+element_DA              0x2000'06b4   0x30  Data  Lc  service_DA.o [1]
+element_DA_ack          0x2000'06e4   0x30  Data  Lc  service_DA.o [1]
+element_Data            0x2000'0714   0x30  Data  Lc  service_Data.o [1]
+element_Data_ack        0x2000'0744   0x30  Data  Lc  service_Data.o [1]
+element_Mesh            0x2000'0774   0x30  Data  Lc  service_Mesh.o [1]
+element_Mesh_ack        0x2000'07a4   0x30  Data  Lc  service_Mesh.o [1]
+element_Shell           0x2000'07d4   0x30  Data  Lc  service_Shell.o [1]
+event_DA                0x2000'0978    0x8  Data  Lc  service_DA.o [1]
+event_DA_ack            0x2000'0980    0x8  Data  Lc  service_DA.o [1]
+event_DA_ack_id_get      0x800'3d8d    0x4  Code  Gb  service_DA.o [1]
+event_DA_id_get          0x800'3d89    0x4  Code  Gb  service_DA.o [1]
+event_Data              0x2000'0990    0x8  Data  Lc  service_Data.o [1]
+event_Data_ack          0x2000'0998    0x8  Data  Lc  service_Data.o [1]
+event_Data_ack_id_get    0x800'3555    0x4  Code  Lc  service_Data.o [1]
+event_Data_id_get        0x800'3551    0x4  Code  Gb  service_Data.o [1]
+event_Mesh              0x2000'09a0    0x8  Data  Lc  service_Mesh.o [1]
+event_Mesh_ack          0x2000'09a8    0x8  Data  Lc  service_Mesh.o [1]
+event_Mesh_ack_id_get    0x800'30e9    0x4  Code  Gb  service_Mesh.o [1]
+event_Mesh_id_get        0x800'30e1    0x4  Code  Gb  service_Mesh.o [1]
+event_Shell             0x2000'09b8    0x8  Data  Lc  service_Shell.o [1]
+event_Shell_id_get       0x800'27ad    0x4  Code  Gb  service_Shell.o [1]
+event_create             0x800'5691   0x28  Code  Gb  event.o [1]
+event_send               0x800'56b9   0x24  Code  Gb  event.o [1]
+event_tick_get           0x800'571b    0x8  Code  Lc  event.o [1]
+event_wait               0x800'56dd   0x3e  Code  Gb  event.o [1]
+exit                     0x800'759f    0x8  Code  Gb  exit.o [2]
+flash_init               0x800'1ccd    0xe  Code  Gb  main.o [1]
+get_dev_state            0x800'2f07    0x6  Code  Gb  service_Mesh.o [1]
+get_group_cb             0x800'4463   0x62  Code  Lc  packet.o [1]
+get_handle               0x800'46c5   0x1e  Code  Gb  packet.o [1]
+get_hb_info              0x800'3923   0x14  Code  Gb  service_DA.o [1]
+get_led_parm             0x800'3c51   0x80  Code  Gb  service_DA.o [1]
+get_led_parm::__func__   0x800'77d0   0x10  Data  Lc  service_DA.o [1]
+get_node_cb              0x800'4519   0x16  Code  Lc  packet.o [1]
+get_rssi                0x2000'0010    0x8  Data  Gb  service_DA.o [1]
+get_time                 0x800'3cd5   0x5e  Code  Gb  service_DA.o [1]
+group                   0x2000'09c8    0x4  Data  Lc  service_Data.o [1]
+groupList               0x2000'0954   0x10  Data  Gb  service_Data.o [1]
+hadc                    0x2000'0478   0x5c  Data  Gb  adc.o [1]
+hb_cb                    0x800'44d1   0x48  Code  Lc  packet.o [1]
+hb_info                 0x2000'0964    0xc  Data  Lc  service_DA.o [1]
+hdma_adc                0x2000'0520   0x48  Data  Gb  adc.o [1]
+hdma_usart1_rx          0x2000'0568   0x48  Data  Gb  usart.o [1]
+hdma_usart1_tx          0x2000'05b0   0x48  Data  Gb  usart.o [1]
+hlpuart1                0x2000'02f8   0x80  Data  Gb  usart.o [1]
+hrtc                    0x2000'0830   0x24  Data  Gb  rtc.o [1]
+htim22                  0x2000'0678   0x3c  Data  Gb  tim.o [1]
+htim6                   0x2000'063c   0x3c  Data  Gb  tim.o [1]
+huart1                  0x2000'0378   0x80  Data  Gb  usart.o [1]
+huart2                  0x2000'03f8   0x80  Data  Gb  usart.o [1]
+in_net_timer_callback    0x800'30cb   0x16  Code  Lc  service_Mesh.o [1]
+is_innet_parm_correct    0x800'29d9   0xea  Code  Lc  service_Mesh.o [1]
+is_innet_parm_correct::__func__
+                         0x800'7650   0x18  Data  Lc  service_Mesh.o [1]
+is_intacFlag            0x2000'09d8    0x1  Data  Lc  packet.o [1]
+is_interact_cmd          0x800'406d    0x6  Code  Gb  packet.o [1]
+is_zigbee_cfg_finish     0x800'2edf   0x12  Code  Lc  service_Mesh.o [1]
+is_zigbee_innet_ok       0x800'2ef5   0x12  Code  Lc  service_Mesh.o [1]
+isspace                  0x800'6a15   0x12  Code  Gb  isspace.o [2]
+ita_data_process         0x800'3579  0x252  Code  Lc  service_Data.o [1]
+led_state               0x2000'0970    0x8  Data  Gb  packet.o [1]
+lmos                     0x800'6a8c   0x18  Data  Lc  xDaysTo.o [2]
+lmos                     0x800'6ba4   0x18  Data  Lc  xttotm.o [2]
+log_level               0x2000'0144    0x1  Data  Gb  log.o [1]
+log_level_set            0x800'5ead    0x6  Code  Gb  log.o [1]
+log_printf               0x800'5eb9   0x1a  Code  Gb  log.o [1]
+main                     0x800'1bf9   0x48  Code  Gb  main.o [1]
+memchr                   0x800'6a39         Code  Gb  memchr.o [3]
+memcmp                   0x800'5ed5         Code  Gb  memcmp.o [3]
+mktime                   0x800'67dd   0xf8  Code  Gb  mktime.o [2]
+mos                      0x800'6aa4   0x18  Data  Lc  xDaysTo.o [2]
+mos                      0x800'6bbc   0x18  Data  Lc  xttotm.o [2]
+ndigs                    0x800'6d84   0x28  Data  Lc  iar_Stoulx.o [2]
+need_rejoin              0x800'4057    0x6  Code  Gb  packet.o [1]
+need_sys_rst             0x800'4051    0x6  Code  Gb  packet.o [1]
+net_data_process         0x800'380f   0x2a  Code  Gb  service_Data.o [1]
+pFlash                  0x2000'0874   0x18  Data  Gb  stm32l0xx_hal_flash.o [1]
+pack_ack_packet          0x800'477d   0x74  Code  Gb  packet.o [1]
+parse_packet             0x800'452f  0x17a  Code  Gb  packet.o [1]
+printchar                0x800'6291   0x24  Code  Lc  printf-stdarg.o [1]
+printi                   0x800'632d   0xc2  Code  Lc  printf-stdarg.o [1]
+printk_va                0x800'63f9  0x190  Code  Gb  printf-stdarg.o [1]
+prints                   0x800'62b5   0x78  Code  Lc  printf-stdarg.o [1]
+prvCmdIdentify_Tokenize
+                         0x800'5d15  0x10e  Code  Lc  shell.o [1]
+queue_DA                0x2000'088c   0x14  Data  Lc  service_DA.o [1]
+queue_DA_ack            0x2000'08a0   0x14  Data  Lc  service_DA.o [1]
+queue_Data              0x2000'08c8   0x14  Data  Lc  service_Data.o [1]
+queue_Data_ack          0x2000'08dc   0x14  Data  Lc  service_Data.o [1]
+queue_Mesh              0x2000'08f0   0x14  Data  Lc  service_Mesh.o [1]
+queue_Mesh_ack          0x2000'0904   0x14  Data  Lc  service_Mesh.o [1]
+queue_Shell             0x2000'0940   0x14  Data  Lc  service_Shell.o [1]
+queue_init               0x800'6181   0x18  Code  Gb  queue.o [1]
+queue_is_empty           0x800'6273   0x1e  Code  Lc  queue.o [1]
+queue_is_full            0x800'624d   0x26  Code  Lc  queue.o [1]
+queue_pop                0x800'61f3   0x5a  Code  Gb  queue.o [1]
+queue_push               0x800'6199   0x5a  Code  Gb  queue.o [1]
+quit_net                 0x800'31af   0x24  Code  Gb  service_Data.o [1]
+quit_net_timer_callback
+                         0x800'30c9    0x2  Code  Lc  service_Mesh.o [1]
+rejoinFlag              0x2000'09d7    0x1  Data  Lc  packet.o [1]
+service_DA               0x800'3d51   0x1e  Code  Gb  service_DA.o [1]
+service_DA_init          0x800'38ed   0x36  Code  Gb  service_DA.o [1]
+service_Data             0x800'3501   0x50  Code  Gb  service_Data.o [1]
+service_Data_init        0x800'3177   0x20  Code  Gb  service_Data.o [1]
+service_Mesh             0x800'3057   0x72  Code  Gb  service_Mesh.o [1]
+service_Mesh::__func__   0x800'77f0   0x10  Data  Lc  service_Mesh.o [1]
+service_Mesh_init        0x800'3019   0x3e  Code  Gb  service_Mesh.o [1]
+service_Shell            0x800'275f   0x4e  Code  Gb  service_Shell.o [1]
+service_Shell_init       0x800'25c1   0x22  Code  Gb  service_Shell.o [1]
+service_init             0x800'1d21   0x14  Code  Lc  main.o [1]
+set_alarm_cb             0x800'435d   0xe0  Code  Lc  packet.o [1]
+set_bright_cb            0x800'41a5   0x34  Code  Lc  packet.o [1]
+set_dev_state_not_innet
+                         0x800'2f11    0x8  Code  Gb  service_Mesh.o [1]
+set_group_cb             0x800'41ff  0x14c  Code  Lc  packet.o [1]
+set_handle               0x800'46a9   0x1c  Code  Gb  packet.o [1]
+set_hb_info              0x800'3937   0x1a  Code  Gb  service_DA.o [1]
+set_intac                0x800'407b    0x8  Code  Gb  packet.o [1]
+set_led_off              0x800'4127   0x54  Code  Gb  packet.o [1]
+set_led_on               0x800'40e1   0x46  Code  Gb  packet.o [1]
+set_ledonoff_cb          0x800'417b   0x2a  Code  Lc  packet.o [1]
+set_rejoin               0x800'4065    0x8  Code  Gb  packet.o [1]
+set_rejoin_cb            0x800'4445   0x1e  Code  Lc  packet.o [1]
+set_sysrstFlag           0x800'41d9    0x8  Code  Lc  packet.o [1]
+set_sysrst_cb            0x800'41e1   0x1e  Code  Lc  packet.o [1]
+shell_Rx_Enable          0x800'25b1   0x10  Code  Gb  service_Shell.o [1]
+shell_ctrl_process       0x800'5b2d   0xf8  Code  Gb  shell_call.o [1]
+shell_line_data_get      0x800'2753    0xc  Code  Gb  service_Shell.o [1]
+shell_line_get           0x800'25e3  0x170  Code  Gb  service_Shell.o [1]
+shell_log_process        0x800'573f   0x3e  Code  Gb  shell_call.o [1]
+shell_printf             0x800'5725   0x1a  Code  Gb  shell_call.o [1]
+shell_set_process        0x800'577d  0x18e  Code  Gb  shell_call.o [1]
+shell_show_process       0x800'5a75   0x8e  Code  Gb  shell_call.o [1]
+shell_uart              0x2000'0274   0x84  Data  Lc  service_Shell.o [1]
+show_alarm               0x800'59a5   0x26  Code  Gb  shell_call.o [1]
+show_devinfo             0x800'590b   0x2a  Code  Gb  shell_call.o [1]
+show_devstat             0x800'5935   0x28  Code  Gb  shell_call.o [1]
+show_group               0x800'595d   0x48  Code  Gb  shell_call.o [1]
+show_hb                  0x800'59e9   0x76  Code  Gb  shell_call.o [1]
+strcmp                   0x800'65a1         Code  Gb  strcmp.o [3]
+strcspn                  0x800'67b7   0x24  Code  Gb  strcspn.o [2]
+strlen                   0x800'6785         Code  Gb  strlen.o [3]
+strspn                   0x800'6793   0x24  Code  Gb  strspn.o [2]
+sys_init                 0x800'1ce9   0x38  Code  Lc  main.o [1]
+sysrstFlag              0x2000'09d6    0x1  Data  Lc  packet.o [1]
+timer_DA                0x2000'08b4   0x14  Data  Gb  service_DA.o [1]
+timer_create             0x800'5ef5   0x32  Code  Gb  timer.o [1]
+timer_list              0x2000'0854   0x20  Data  Gb  timer.o [1]
+timer_list_insert        0x800'5f75   0x28  Code  Lc  timer.o [1]
+timer_list_null_find     0x800'5f47   0x2e  Code  Lc  timer.o [1]
+timer_mesh_innet        0x2000'092c   0x14  Data  Lc  service_Mesh.o [1]
+timer_mesh_quit_net     0x2000'0918   0x14  Data  Lc  service_Mesh.o [1]
+timer_sched              0x800'5f9d   0x54  Code  Gb  timer.o [1]
+timer_start              0x800'5f27   0x14  Code  Gb  timer.o [1]
+timer_stop               0x800'5f3b    0xc  Code  Gb  timer.o [1]
+timer_tick_get           0x800'5ff1    0x8  Code  Lc  timer.o [1]
+tolower                  0x800'6a27   0x12  Code  Gb  tolower.o [2]
+uwTick                  0x2000'09d0    0x4  Data  Gb  stm32l0xx_hal.o [1]
+version                 0x2000'00cc    0xc  Data  Lc  shell_call.o [1]
+wait_DA_ack              0x800'3c07   0x3a  Code  Lc  service_DA.o [1]
+wait_data_ack            0x800'37d9   0x36  Code  Gb  service_Data.o [1]
+wait_zigbee_ack          0x800'2e39   0x36  Code  Lc  service_Mesh.o [1]
+zigbeeInit_msg_send      0x800'282d   0x18  Code  Lc  service_Mesh.o [1]
+zigbeeInnet_msg_send     0x800'2845   0x18  Code  Lc  service_Mesh.o [1]
+zigbee_Init              0x800'2f5d   0x34  Code  Lc  service_Mesh.o [1]
+zigbee_Innet_poll        0x800'2f91   0x34  Code  Lc  service_Mesh.o [1]
+zigbee_Innet_poll::__func__
+                         0x800'770c   0x14  Data  Lc  service_Mesh.o [1]
+zigbee_broadcast        0x2000'0008    0x8  Data  Lc  packet.o [1]
+zigbee_cfg               0x800'2e71   0x6e  Code  Lc  service_Mesh.o [1]
+zigbee_cfg::__func__     0x800'787c    0xc  Data  Lc  service_Mesh.o [1]
+zigbee_cfgData          0x2000'05f8   0x44  Data  Gb  service_Mesh.o [1]
+zigbee_cfg_ack          0x2000'00bc    0x8  Data  Lc  service_Mesh.o [1]
+zigbee_cfg_cmd          0x2000'0068   0x50  Data  Lc  service_Mesh.o [1]
+zigbee_cfg_data_process
+                         0x800'2af1  0x31a  Code  Lc  service_Mesh.o [1]
+zigbee_cfg_data_process::__func__
+                         0x800'7668   0x18  Data  Lc  service_Mesh.o [1]
+zigbee_cfg_init          0x800'285d   0x6a  Code  Lc  service_Mesh.o [1]
+zigbee_cmd              0x2000'0018   0x14  Data  Lc  service_Data.o [1]
+zigbee_data_process      0x800'31d3  0x112  Code  Lc  service_Data.o [1]
+zigbee_data_process::__func__
+                         0x800'76f8   0x14  Data  Lc  service_Data.o [1]
+zigbee_data_send         0x800'3197   0x18  Code  Gb  service_Data.o [1]
+zigbee_head             0x2000'0000    0x4  Data  Lc  packet.o [1]
+zigbee_innet             0x800'2f21   0x2c  Code  Lc  service_Mesh.o [1]
+zigbee_innet::__func__   0x800'77e0   0x10  Data  Lc  service_Mesh.o [1]
+zigbee_load             0x2000'04d4   0x4c  Data  Gb  main.o [1]
+zigbee_mac              0x2000'09b0    0x8  Data  Gb  service_Mesh.o [1]
+zigbee_n_tail           0x2000'00b8    0x4  Data  Lc  service_Mesh.o [1]
+zigbee_netled_close      0x800'280d   0x10  Code  Lc  service_Mesh.o [1]
+zigbee_netled_open       0x800'281d   0x10  Code  Lc  service_Mesh.o [1]
+zigbee_quit             0x2000'0054   0x14  Data  Lc  service_Data.o [1]
+zigbee_quitnet           0x800'2fd1   0x40  Code  Lc  service_Mesh.o [1]
+zigbee_quitnet_process   0x800'3353   0x4c  Code  Gb  service_Data.o [1]
+zigbee_quitnet_process::__func__
+                         0x800'7638   0x18  Data  Lc  service_Data.o [1]
+zigbee_reboot           0x2000'00e8   0x10  Data  Lc  shell_call.o [1]
+zigbee_reset            0x2000'00d8   0x10  Data  Lc  shell_call.o [1]
+zigbee_send_group_cmd    0x800'3303   0x50  Code  Lc  service_Data.o [1]
+zigbee_send_quitnet_cmd
+                         0x800'32e5   0x1e  Code  Lc  service_Data.o [1]
+zigbee_set_group_ack    0x2000'002c   0x14  Data  Lc  service_Data.o [1]
+zigbee_set_group_process
+                         0x800'33c1  0x130  Code  Gb  service_Data.o [1]
+zigbee_set_group_process::__func__
+                         0x800'75c8   0x1c  Data  Lc  service_Data.o [1]
+zigbee_set_mesh_ack     0x2000'00c4    0x8  Data  Lc  service_Mesh.o [1]
+zigbee_set_quitnet_ack  0x2000'0040   0x14  Data  Lc  service_Data.o [1]
+zigbee_state            0x2000'09db    0x1  Data  Lc  service_Mesh.o [1]
+zigbee_tail             0x2000'09cc    0x4  Data  Lc  service_Mesh.o [1]
+zigbee_tmp_head         0x2000'0004    0x4  Data  Lc  packet.o [1]
+zigbee_uart_rx_en        0x800'3159   0x1e  Code  Gb  service_Data.o [1]
+
+
+[1] = E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Obj
+[2] = dl6M_tlf.a
+[3] = rt6M_tl.a
+[4] = shb_l.a
+
+  28 078 bytes of readonly  code memory
+   3 102 bytes of readonly  data memory
+   4 570 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

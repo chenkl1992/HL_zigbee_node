@@ -1,0 +1,15 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.2\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.2\arm\bin\armstlink2.dll" 
+
+"E:\WORK\Zigbee\Zigbee_node\EWARM\Zigbee_node\Exe\Zigbee_node.out" 
+
+--plugin="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.2\arm\bin\armbat.dll" 
+
+--device_macro="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.2\arm\config\debugger\ST\STM32L0xx.dmac" 
+
+--flash_loader="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.2\arm\config\flashloader\ST\FlashSTM32L0xxx8.board" 
+
+
+
+
